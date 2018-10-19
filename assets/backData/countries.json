@@ -1,0 +1,64 @@
+{
+    "offset": 0,
+    "limit": 10,
+    "total": 6,
+    "elapsedTime": "00:00:00.0085715",
+    "items": [
+        {
+            "id": "AR",
+            "photo": "AR.png",
+            "HaveSubDirections": true,
+            "urlData": "json_app_argentina.json",
+            "data": [],
+            "nombreRegion": "Nombre Region",
+            "nombreComuna": "Nombre Comuna",
+            "defaultStore": 12,
+            "defaultLocation": "",
+            "name": "Argentina",
+            "selected": false,
+            "codes": {
+                "dadi": null
+            }
+        },
+        {
+            "id": "CL",
+            "photo": "CL.png",
+            "HaveSubDirections": true,
+            "urlData": "json_app_chile.json",
+            "data": [],
+            "defaultStore": 96,
+            "defaultLocation": "",
+            "name": "Chile",
+            "selected": false,
+            "codes": {
+                "dadi": "361"
+            }
+        }, {
+            "id": "MX",
+            "photo": "MX.png",
+            "HaveSubDirections": false,
+            "urlData": "json_app_mexico.json",
+            "data": [],
+            "defaultStore": 1010,
+            "defaultLocation": "Ciudad de México",
+            "name": "México",
+            "selected": false,
+            "codes": {
+                "dadi": null
+            }
+        }, {
+            "id": "PE",
+            "photo": "PE.png",
+            "HaveSubDirections": true,
+            "urlData": "json_app_peru.json",
+            "data": [],
+            "defaultStore": 2,
+            "defaultLocation": "",
+            "name": "Perú",
+            "selected": false,
+            "codes": {
+                "dadi": null
+            }
+        }
+    ]
+}

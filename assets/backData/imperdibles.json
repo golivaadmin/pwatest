@@ -1,0 +1,170 @@
+{
+    "_comments": "los tipos de banner pueden ser: NONE (imagen sin url), SKU, CAT (categoria), URL (url externa), VIDEO",
+    "evento": {
+        "vitrinas": [
+            {
+                "image": "http://www.sodimac.cl/static/home/vtnApp/2018/ago/VTN-APP-01-2817683.jpg",
+                "type": "SKU",
+                "reference": "2817683",
+                "status": true,
+                "titulo": "Imperdibles",
+                "placeholder": "Buscar ofertas..."
+            },
+            {
+                "image": "http://www.sodimac.cl/static/home/vtnApp/2018/ago/VTN-APP-02-2837358.jpg",
+                "type": "SKU",
+                "reference": "2837358",
+                "status": true
+            },
+            {
+                "image": "http://www.sodimac.cl/static/home/vtnApp/2018/ago/VTN-APP-04-158023X.jpg",
+                "type": "SKU",
+                "reference": "158023X",
+                "status": true
+            },
+            {
+                "image": "http://www.sodimac.cl/static/home/vtnApp/2018/ago/VTN-APP-05-3309282.jpg",
+                "type": "SKU",
+                "reference": "3309282",
+                "status": true
+            }
+        ],
+        "categorias": [
+            {
+                "name": "Construcción y Herramientas",
+                "icon": "http://www.sodimac.cl/static/categorias/imperdibles/svg/ico-herramientas.svg",
+                "type": "",
+                "reference": "",
+                "status": true,
+                "destacados": [
+                    "3047830",
+                    "3047881",
+                    "274354X",
+                    "3177769",
+                    "2346672",
+                    "2346613"
+                ]
+            },
+            {
+                "name": "Gasfitería y Electricidad",
+                "icon": "http://www.sodimac.cl/static/categorias/imperdibles/svg/ico-electricidad.svg",
+                "type": "CAT",
+                "reference": "",
+                "status": true,
+                "destacados": [
+                    "3608212",
+                    "2282917",
+                    "3327949",
+                    "3147401",
+                    "3327930",
+                    "448699"
+                ]
+            },
+            {
+                "name": "Baño, Cocina y Línea Blanca",
+                "icon": "http://www.sodimac.cl/static/categorias/imperdibles/svg/ico-bano.svg",
+                "type": "CAT",
+                "reference": "",
+                "status": true,
+                "destacados": [
+                    "3349594",
+                    "3096106",
+                    "3309622",
+                    "3304469",
+                    "2881039",
+                    "3166066"
+                ]
+            },
+            {
+                "name": "Calefacción",
+                "icon": "http://www.sodimac.cl/static/categorias/imperdibles/svg/ico-calefaccion.svg",
+                "type": "CAT",
+                "reference": "",
+                "status": true,
+                "destacados": [
+                    "2791544",
+                    "2893916",
+                    "3280640",
+                    "1113372",
+                    "3415066",
+                    "1129074"
+                ]
+            },
+            {
+                "name": "Muebles y Decoración",
+                "icon": "http://www.sodimac.cl/static/categorias/imperdibles/svg/ico-muebles.svg",
+                "type": "CAT",
+                "reference": "",
+                "status": true,
+                "destacados": [
+                    "3139700",
+                    "1738291",
+                    "3104680",
+                    "1738313",
+                    "3198901",
+                    "2715708"
+                ]
+            },
+            {
+                "name": "Oraganización y Limpieza",
+                "icon": "http://www.sodimac.cl/static/categorias/imperdibles/svg/ico-limpieza.svg",
+                "type": "CAT",
+                "reference": "",
+                "status": true,
+                "destacados": [
+                    "1203509",
+                    "2874415",
+                    "3196593",
+                    "3310647",
+                    "2679132",
+                    "3145514"
+                ]
+            },
+            {
+                "name": "Tecnología y Seguridad",
+                "icon": "http://www.sodimac.cl/static/categorias/imperdibles/svg/ico-tecnologia.svg",
+                "type": "CAT",
+                "reference": "",
+                "status": true,
+                "destacados": [
+                    "3304299",
+                    "3653900",
+                    "3355268",
+                    "3046788",
+                    "3566986",
+                    "3596613"
+                ]
+            },
+                        {
+                "name": "Automóvil",
+                "icon": "https://respaldosnube.blob.core.windows.net/cdn/iconoscategorias/sodimac/cl/N1/scat913458.png",
+                "type": "CAT",
+                "reference": "",
+                "status": true,
+                "destacados": [
+                    "344872X",
+                    "356603X",
+                    "264116X",
+                    "342720X",
+                    "3274845",
+                    "327487X"
+                ]
+            },
+            {
+                "name": "Aire Libre y Jardín",
+                "icon": "http://www.sodimac.cl/static/categorias/imperdibles/svg/ico-aireLibre.svg",
+                "type": "CAT",
+                "reference": "",
+                "status": true,
+                "destacados": [
+                    "3304671",
+                    "3399168",
+                    "540609",
+                    "2877767",
+                    "2775247",
+                    "2048892"
+                ]
+            }
+        ]
+    }
+}

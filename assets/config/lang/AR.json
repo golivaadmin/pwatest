@@ -1,0 +1,512 @@
+{
+    "COUNTRY": {
+        "ID": "AR",
+        "NAME": "ARGENTINA",
+        "ANALYTICS": "UA-121186923-1",
+        "WEB": "www.sodimac.com.ar",
+        "SHARE": "https://www.sodimac.com.ar/sodimac-ar/product/",
+        "PHONE": "0810 222 7634",
+        "CALL_HORARY": "Llama de Lunes a Sábado de 9 a 21 hrs.",
+        "HAVESCANGO": false,
+        "NUMBER_FORMATS": {
+            "CURRENCY_SYM": "$",
+            "MONEY": "ARS",
+            "DECIMAL_SEP": ".",
+            "GROUP_SEP": ",",
+            "NUMBER": {
+                "minInt": 0,
+                "minDecimal": 0,
+                "maxDecimal": 2
+            }
+        },
+        "PRICE_UNIT_EXEPTION":[],
+        "NATIONAL_ID": {
+            "name": "DNI",
+            "placeholder": "",
+            "format": "",
+            "splitter": ""
+        },
+        "EXTRA_SETTINGS": {
+            "validStores": "1,2,4,5",
+            "hasCotizador": false,
+            "hasTurno": false,
+            "turnoStores": [],
+            "PDPshopNow": false,
+            "PDPshowStock": false,
+            "haveLogin": false,
+            "LocationFormat": "Elige tu país, provincia, partido y localidad"
+        }
+    },
+    "MENU": [
+        {
+            "name": "Iniciar Sesion",
+            "icon": "md-log-in",
+            "login": false,
+            "link": {
+                "type": "modal",
+                "page": "LoginPage"
+            }
+        }, {
+            "name": "Mis Compras",
+            "icon": "basket",
+            "login": false,
+            "link": {
+                "type": "page",
+                "page": "Shopping"
+            }
+        }, {
+            "name": "Tienda",
+            "icon": "store",
+            "login": false,
+            "link": {
+                "type": "modal",
+                "page": "StoresPage"
+            }
+        }, {
+            "name": "Notificaciones",
+            "icon": "notifications",
+            "login": false,
+            "link": {
+                "type": "page",
+                "page": "NotificationsPage"
+            }
+        }, {
+            "name": "Chat",
+            "icon": "chatbubbles",
+            "login": false,
+            "link": {
+                "type": "alert",
+                "page": "Chat"
+            }
+        }, {
+            "name": "Dejanos un comentario",
+            "icon": "chatbubbles",
+            "login": false,
+            "link": {
+                "type": "modal",
+                "page": "ModalComentarioPage"
+            }
+        }, {
+            "name": "Asistencia Telefonica",
+            "icon": "phone",
+            "login": false,
+            "link": {
+                "type": "modal",
+                "page": "ModalAsistenciaTelefonicaPage"
+            }
+        }, {
+            "name": "Cerrar Sesion",
+            "icon": "power",
+            "login": true,
+            "link": {
+                "type": "action",
+                "page": "logout"
+            }
+        }
+    ],
+    "TABS": [
+        {
+            "name": "HOME",
+            "title": "Inicio",
+            "icon": "home",
+            "custom_class": "",
+            "ref": { 
+                "name": "Home",
+                "type": "page"
+            },
+            "nav": {
+                "ref": "Home",
+                "data": "assets/icon/sodimac.png"
+            }
+        },{
+            "name": "FAVORITES",
+            "title": "Favoritos",
+            "icon": "heart",
+            "custom_class": "",
+            "ref": { 
+                "name": "Favorites",
+                "type": "page"
+            },
+            "nav": "Favoritos"
+        },{
+            "name": "LECTOR",
+            "title": "Lector",
+            "icon": "ios-barcode-outline",
+            "custom_class": "lector",
+            "ref": {
+                "name": "QrChoosePage",
+                "type": "modal"
+            },
+            "nav": ""
+        },{
+            "name": "CATEGORIES",
+            "title": "Categorías",
+            "icon": "apps",
+            "custom_class": "",
+            "ref": { 
+                "name": "Categories",
+                "type": "page"
+            },
+            "nav": "Categorías"
+        },{
+            "name": "MENU",
+            "title": "Menu",
+            "icon": "menu",
+            "custom_class": "",
+            "ref": { 
+                "name": "BurgerPage",
+                "type": "modal"
+            },
+            "nav": ""
+        }
+    ],
+    "DIALOGS": {
+        "HOME": {
+            "SPECIAL_PRODUCTS": "Productos Destacados",
+            "RELATED": "Relacionados",
+            "RECENT": "Recientes"
+        },
+        "FAVORITES": {
+            "EMPTY": "Actualmente tu listado de favoritos está vacío",
+            "EMPTY_BTN": "Agregar más Productos"
+        },
+        "CART": {
+            "EMPTY": "Actualmente tu carro de compra está vacío",
+            "EMPTY_BTN": "Agregar Productos"
+        },
+        "SCANGO": {
+            "EMPTY": "Actualmente tu carro de compra está vacío",
+            "EMPTY_BTN": "Escanear Productos"
+        },
+        "QUOTATIONS": {
+            "EMPTY": "Actualmente no ha realizado ninguna cotización en tienda",
+            "EMPTY_BTN": "Buscar productos"
+        },
+        "SEARCH": {
+            "RECIENTS": "Recientes",
+            "CATEGORIES": "Categorías",
+            "PRODUCTS": "Productos",
+            "EMPTY": "Sin resultados",
+            "PRODUCTOS_DESTACADOS": "Productos Destacados",
+            "VISTOS_RECIENTE": "Vistos Recientemente",
+            "VERTODOS": "Ver Todos los resultados",
+            "VERMAS": "Ver Más"
+        },
+        "STORES": {
+            "NEAR": "Cercanas a tu ubicación",
+            "OTHERS": "Otras"
+        },
+        "PDP": {
+            "CALL_CENTER": "¿Desea comprar este producto?"
+        }
+    },
+    "MODALS": {
+        "RT_DD": {
+            "title": "Compras Online",
+            "SEGMENTS": [
+                {
+                    "id": "DD",
+                    "title": "Envío a domicilio",
+                    "icon": "",
+                    "TOP": {
+                        "title": "<b>Recibí tu compra</b>",
+                        "description": "en la comodidad de tu hogar"
+                    },
+                    "METODOS": {
+                        "title": "Métodos de Compra",
+                        "data":  [
+                            {
+                                "name": "Aplicación Movil",
+                                "iconTop": "ios-phone-portrait-outline",
+                                "textBottom": {
+                                    "type": "icons",
+                                    "content": [
+                                        "logo-android",
+                                        "logo-apple"
+                                    ]
+                                }
+                            }, {
+                                "name": "Sitio Sodimac",
+                                "iconTop": "ios-laptop-outline",
+                                "textBottom": {
+                                    "type": "web", 
+                                    "content": "www.sodimac.com.ar"
+                                }
+                            }, {
+                                "name": "Venta Telefónica",
+                                "iconTop": "ios-call",
+                                "textBottom": {
+                                    "type": "number_phone", 
+                                    "content": "0810 666 7634"
+                                }
+                            }
+                        ]
+                    },
+                    "COMO_FUNCIONA": {
+                        "title": "¿Cómo Funciona?",
+                        "SLIDES": [
+                            {
+                                "important_title": "",
+                                "image": "assets/imgs/landingRTDD/ico_truck.png",
+                                "description": "Ingresá a la app de Sodimac: Compra cualquier producto disponible para <b>Envío a Domicilio</b>."
+                            }, {
+                                "important_title": "",
+                                "image": "assets/imgs/landingRTDD/ico_directiona.png",
+                                "description": "<b>Ingresá tu dirección de envío</b> (en base al destino y peso se calcula la tarifa)."
+                            }, {
+                                "important_title": "",
+                                "image": "assets/imgs/landingRTDD/ico_calendar.png",
+                                "description": "Elegí la <b>fecha</b> y rango <b>horario</b>.."
+                            }, {
+                                "important_title": "",
+                                "image": "assets/imgs/landingRTDD/ico_card.png",
+                                "description": "Elegí tu forma de <b>pago</b>."
+                            }, {
+                                "important_title": "¡Tu compra está en camino!",
+                                "image": "assets/imgs/landingRTDD/ico_bag.png",
+                                "description": "Recibirás un <b>mail</b> con el resumen de la compra y te informaremos cuando esté en camino."
+                            }
+                        ]
+                    },
+                    "NO_OLVIDAR": {
+                        "title": "¡No lo olvides!",
+                        "items": [
+                            "Verificar que el producto recibido coincida con tu compra y se encuentre en perfectas condiciones antes de firmar el remito que acredita la aceptación de recepción de compra.",
+                            "Si el producto se encuentra en malas condiciones rechazalo y agregá un comentario junto con tu nombre y tu DNI en el remito a firmar con la entrega. Exigí una copia.",
+                            "El servicio de envío a domicilio no considera el armado o instalación de productos.",
+                            "Si comprás más de 1 producto con envío, tu compra podría ser entregada en 2 o más envíos."
+                        ]
+                    },
+                    "FAQ": {
+                        "title": "Preguntas Frecuentes",
+                        "items": [
+                            {
+                                "q": "¿Cuáles son nuestros métodos de envío?",
+                                "a": "<b>Envío Programado:</b><br><br>disponible para todo el país (excepto Tierra del Fuego y Misiones). Si efectuás tu compra hoy antes de las 19:00 horas, recibirás tu producto en las fechas disponibles que elijas, incluido el sábado, entre las 08:00 y 20:00 horas. Vos elegís la fecha en que esperás tu Orden de compra.<br><b>Entrega AM/PM:</b><br><br>elegí la banda horario que más se ajusta a tus tiempos, y espera tu pedido en donde vos quieras <br>(*servicio válido únicamente para Capital Federal).",
+                                "list": [
+                                    "",
+                                    "",
+                                    "",
+                                    ""
+                                ]
+                            }, {
+                                "q": "¿Cuándo llegará mi orden?",
+                                "a": "Al momento de la compra podrás seleccionar la fecha de entrega la cual se confirmará en el email de confirmación de compra. Podrás conocer el estado de tu compra a través de la opción <b>\"Mis compras\"</b>",
+                                "list": []
+                            }, {
+                                "q": "¿Puedo cambiar la dirección de entrega o reprogramar la fecha de entrega de mi compra?",
+                                "a": "",
+                                "list": []
+                            }, {
+                                "q": "¿Qué pasa si mi compra llega dañada?",
+                                "a": "Si el pedido llega con daños, deberás llamar a nuestra línea de a",
+                                "list": []
+                            }, {
+                                "q": "¿Qué sucede si mi compra está pendiente de entrega?",
+                                "a": "En raras ocasiones tenemos problemas con la entrega de nuestros pedidos, en el caso de que esto ocurra nos pondremos en contacto para informarte lo sucedido.",
+                                "list": []
+                            }, {
+                                "q": "¿Existe alguna restricción de entrega?",
+                                "a": "Ofrecemos envío a la mayor parte del País.<br>Por el momento no tenemos cobertura para: Tierra del Fuego y Misiones",
+                                "list": []
+                            }
+                        ]
+                    }
+                }, {
+                    "id": "RT",
+                    "title": "Retiro en Tienda",
+                    "icon": "",
+                    "TOP": {
+                        "title": "<b>Ahorrate el costo de envío</b>",
+                        "description": "retirando tus compras en nuestras tiendas habilitadas."
+                    },
+                    "METODOS": {
+                        "title": "Métodos de Compra",
+                        "data": [
+                            {
+                                "name": "Aplicación Movil",
+                                "iconTop": "ios-phone-portrait-outline",
+                                "textBottom": {
+                                    "type": "icons",
+                                    "content": [
+                                        "logo-android",
+                                        "logo-apple"
+                                    ]
+                                }
+                            }, {
+                                "name": "Sitio Sodimac",
+                                "iconTop": "ios-laptop-outline",
+                                "textBottom": {
+                                    "type": "web", 
+                                    "content": "www.sodimac.com.ar"
+                                }
+                            }, {
+                                "name": "Venta Telefónica",
+                                "iconTop": "ios-call",
+                                "textBottom": {
+                                    "type": "number_phone", 
+                                    "content": "0810 666 7634"
+                                }
+                            }
+                        ]
+                    },
+                    "COMO_FUNCIONA": {
+                        "title": "¿Cómo Funciona?",
+                        "SLIDES": [
+                            {
+                                "important_title": "",
+                                "image": "assets/imgs/landingRTDD/ico_ret-tienda.png",
+                                "description": "Ingresá a la app de Sodimac y comprá cualquier producto con el ícono <b>“Retiro en tienda”</b> disponible."
+                            }, {
+                                "important_title": "",
+                                "image": "assets/imgs/landingRTDD/ico_tienda.png",
+                                "description": "Seleccioná tu <b>tienda</b> para retiro."
+                            }, {
+                                "important_title": "",
+                                "image": "assets/imgs/landingRTDD/ico_card.png",
+                                "description": "Elegí tu forma de <b>pago.</b>"
+                            }, {
+                                "important_title": "",
+                                "image": "assets/imgs/landingRTDD/ico_envelope.png",
+                                "description": "Recibirás un mail de confirmación de compra y luego otro de confirmación de disponibilidad para retirar."
+                            }
+                        ]
+                    },
+                    "NO_OLVIDAR": {
+                        "title": "¡No olvidar!",
+                        "items": [
+                            "Lleva tu DNI y nº de orden de compra.",
+                            "",
+                            "Sólo podrás retirar en la tienda seleccionada en los horarios en que la misma esté abierta.",
+                            ""
+                        ]
+                    },
+                    "FAQ": {
+                        "title": "Preguntas Frecuentes",
+                        "items": [
+                            {
+                                "q": "¿En qué tienda tengo la opción de Retiro en Tienda?",
+                                "a": "La opción de Compra Online con Retiro en Tiendas se encuentra disponible",
+                                "list": []
+                            }, {
+                                "q": "¿Cómo funciona el Retiro en Tienda?",
+                                "a": "Te notificaremos mediante correo electrónico el estado de tu orden.<br>Primero te llegará un mail de confirmación de compra y luego un mail de confirmac",
+                                "list": []
+                            }, {
+                                "q": "¿Cuánto tiempo tardará mi orden en estar lista después de haberla compra con Retiro en Tienda?",
+                                "a": "La mayoría de nuestros pedidos tarda un plazo de 2 horas en estar disponible en la tienda, pero siempre se debe aguardar a recibir el mail de confirmación de disponibilidad para retiro.",
+                                "list": []
+                            }, {
+                                "q": "¿Cómo sabré cuando mi orden estará lista para retirar?",
+                                "a": "Cuando el pedido esté listo te llegará un mail de confirmación de disponibilidad para retiro.",
+                                "list": []
+                            }, {
+                                "q": "¿Dónde tendré que retirar mi orden una vez que haya llegado a la tienda?",
+                                "a": "Debes dirigirte al mesón de Retiro en Tienda, post venta o mesón de servicios de la tienda y solicitar la entrega de tu compra.",
+                                "list": []
+                            }, {
+                                "q": "¿Cuánto tiempo estará disponible mi producto en la tienda?",
+                                "a": "",
+                                "list": []
+                            }, {
+                                "q": "¿Por qué es necesario ingresar mi número de teléfono cuando compro con Retiro en Tienda?",
+                                "a": "Si por alguna razón hay problemas con tu compra, personal de Sodimac necesitará un teléfono de contac",
+                                "list": []
+                            }, {
+                                "q": "",
+                                "a": "Para realizar el proceso de entrega más fácil y rápido necesitamos que al momento de retirar tu compra tengas la siguiente documentación:",
+                                "list": [
+                                    "DNI o Pasaporte",
+                                    "Número de la orden de compra."
+                                ]
+                            }
+                        ]
+                    }
+                }
+            ]
+        },
+        "COTIZADOR": {
+            "DESCRIPTION": ""
+        }
+    },
+    "LOADING": {
+        "FLEX_LOADGIN": [
+            {
+                "title": "Precios únicos para aprovechar esta temporada",
+                "legend": "Cargando Información"
+            }, {
+                "title": "Precios únicos para aprovechar esta temporada",
+                "legend": "Cargando información..."
+            }, {
+                "title": "<strong>Sorpréndete</strong> con todas las novedades que tenemos para ti",
+                "legend": "Cargando información..."
+            }, {
+                "title": "Buscando los mejores productos para materializar todos tus sueños Hogar",
+                "legend": "Cargando información..."
+            }, {
+                "title": "Tenemos las mejores oportunidades para cada espacio de tu Hogar",
+                "legend": "Cargando información..."
+            }
+        ],
+        "REFRESH": {
+            "PULL": "Suelte para actualizar",
+            "TEXT": "Actualizando"
+        }
+    },
+    "ALERTS": {
+        "DELETE": {
+            "TITLE": "Confirmación",
+            "MESSAGE": "¿Está seguro que desea eliminar el producto?",
+            "BUTTONS": {
+                "CANCEL": "Cancelar",
+                "OK": "Ok"
+            }
+        },
+        "STORE": {
+            "TITLE": "Cambio de tienda",
+            "MESSAGE": "¡Tu tienda ha cambiado correctamente!",
+            "BUTTONS": {
+                "OK": "Entendido"
+            }
+        }
+    },
+    "PRIVACY_POLICIES": [
+       {
+           "title": "Cambios y devoluciones",
+           "description": "Recordá que además de la garantía legal contas con:",
+           "items": [
+               {
+                   "title": "Satisfacción garantizada",
+                   "description": "Podés devolver tu compra hasta luego de 30 días de recibida o 10 para productos que requieren de electricidad para funcionar.",
+                   "link": "http://www.sodimac.com.ar/sodimac-ar/content/Servicio%20al%20Cliente?cid=4012"
+               }, {
+                   "title": "",
+                   "description": "",
+                   "link": ""
+               }, {
+                   "title": "Devolución de dinero",
+                   "description": "Podés anular tu compra y solicitar la devolución del dinero. Consultá los plazos de devolución según medio de pago.",
+                   "link": "http://www.sodimac.com.ar/sodimac-ar/content/a60009/Politica-de-cambios"
+               }
+           ]
+       }, {
+           "title": "Envío",
+           "description": "Te informamos sobre nuestras políticas de envío:",
+           "items": [
+               {
+                   "title": "Horario",
+                   "description": "Envío Programado:<br>disponible para todo el país (excepto Tierra del Fuego y Misiones). ",
+                   "link": ""
+               }, {
+                   "title": "",
+                   "description": "Verificá que corresponda el producto una vez recibido y que éste se encuentre en perfectas condiciones antes de firmar el remitop. En caso de disconformidad guardar una copia del remito, que contenga el comentario de rechazo de compra para hacer válida la pol",
+                   "link": "http://www.sodimac.com.ar/sodimac-ar/content/a60009/Politica-de-cambios"
+               }, {
+                   "title": "",
+                   "description": "La recepción debe realizarse por un mayor de edad; quien deberá firmar, escribir nombre y DNI en el remito para acreditar la recepción. Para mayor información revisar los términos y condiciones.",
+                   "link": "http://www.sodimac.com.ar/sodimac-ar/content/a30009/Terminos-y-Condiciones"
+               }
+           ]
+       }
+    ]
+}

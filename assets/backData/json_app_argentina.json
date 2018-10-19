@@ -1,0 +1,55 @@
+[
+	{
+		"REGION":"BUENOS AIRES",
+		"PROVINCIAS": [
+			{
+				"PROVINCIA":"GENERAL SAN MARTIN",
+				"COMUNAS": [
+					{"COMUNA":"GENERAL SAN MARTIN","TIENDA":12,"LAT":-34.5876339,"LON":-58.5189052}
+				]
+			},
+			{
+				"PROVINCIA":"HURLINGHAM",
+				"COMUNAS": [
+					{"COMUNA":"HURLINGHAM","TIENDA":16,"LAT":-34.6216521,"LON":-58.6371831}
+				]
+			},
+			{
+				"PROVINCIA":"LA MATANZA",
+				"COMUNAS": [
+					{"COMUNA":"SAN JUSTO","TIENDA":14,"LAT":-34.665643,"LON":-58.598018}
+				]
+			},
+			{
+				"PROVINCIA":"LA PLATA",
+				"COMUNAS": [
+					{"COMUNA":"LA PLATA","TIENDA":22,"LAT":-34.899951,"LON":-58.005207}
+				]
+			},
+			{
+				"PROVINCIA":"MALVINAS ARG.",
+				"COMUNAS": [
+					{"COMUNA":"LOS POLVORINES","TIENDA":11,"LAT":-38.416097,"LON":-63.616672},
+					{"COMUNA":"TORTUGUITAS","TIENDA":19,"LAT":-34.450536,"LON":-58.724816}
+				]
+			},
+			{
+				"PROVINCIA":"VICENTE LOPEZ",
+				"COMUNAS": [
+					{"COMUNA":"VICENTE LOPEZ","TIENDA":17,"LAT":-34.533744,"LON":-58.467873}
+				]
+			}
+		]
+	},
+	{
+		"REGION":"CÓRDOBA",
+		"PROVINCIAS": [
+			{
+				"PROVINCIA":"CAPITAL",
+				"COMUNAS": [
+					{"COMUNA":"CÓRDOBA","TIENDA":23,"LAT":-31.394188,"LON":-64.243226}
+				]
+			}
+		]
+	}
+]

@@ -1,0 +1,18 @@
+[
+    {
+        "REGION": "México",
+        "PROVINCIAS": [
+			{
+				"PROVINCIA":"Distrito Federal",
+				"COMUNAS": [
+                    {
+                        "COMUNA":"Distrito Federal",
+                        "TIENDA":1010,
+                        "LAT":-9.10271,
+                        "LON":-78.558568
+                    }
+                ]
+            }
+        ]
+    }
+]

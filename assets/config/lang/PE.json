@@ -1,0 +1,516 @@
+{
+    "COUNTRY": {
+        "ID": "PE",
+        "NAME": "PERÚ",
+        "ANALYTICS": "UA-121208639-1",
+        "WEB": "www.sodimac.com.pe",
+        "SHARE": "https://www.sodimac.com.pe/sodimac-pe/product/",
+        "PHONE": "01 615 6002",
+        "CALL_HORARY": "Llama de Lunes a Sábado de 9 a 21 hrs.",
+        "HAVESCANGO": true,
+        "COTIZAFORMAT": "",
+        "NUMBER_FORMATS": {
+            "CURRENCY_SYM": "S/",
+            "MONEY": "S/",
+            "DECIMAL_SEP": ".",
+            "GROUP_SEP": ",",
+            "NUMBER": {
+                "minInt": 0,
+                "minDecimal": 0,
+                "maxDecimal": 2
+            }
+        },
+        "PRICE_UNIT_EXEPTION":[],
+        "NATIONAL_ID": {
+            "name": "DNI",
+            "placeholder": "12345678",
+            "format": "^[0-9]+$",
+            "splitter": ""
+        },
+        "EXTRA_SETTINGS": {
+            "validStores": "1,4,5",
+            "hasCotizador": true,
+            "hasTurno": false,
+            "turnoStores": [],
+            "PDPshopNow": false,
+            "PDPshowStock": false,
+            "haveLogin": true,
+            "LocationFormat": "Elige tu país, departamento y distrito"
+        }
+    },
+    "MENU": [
+        {
+            "name": "Iniciar Sesion",
+            "icon": "md-log-in",
+            "login": false,
+            "link": {
+                "type": "modal",
+                "page": "LoginPage"
+            }
+        }, {
+            "name": "Mis Compras",
+            "icon": "basket",
+            "login": false,
+            "link": {
+                "type": "page",
+                "page": "Shopping"
+            }
+        }, {
+            "name": "Tienda",
+            "icon": "store",
+            "login": false,
+            "link": {
+                "type": "modal",
+                "page": "StoresPage"
+            }
+        }, {
+            "name": "Notificaciones",
+            "icon": "notifications",
+            "login": false,
+            "link": {
+                "type": "page",
+                "page": "NotificationsPage"
+            }
+        }, {
+            "name": "Chat",
+            "icon": "chatbubbles",
+            "login": false,
+            "link": {
+                "type": "alert",
+                "page": "Chat"
+            }
+        }, {
+            "name": "Dejanos un comentario",
+            "icon": "chatbubbles",
+            "login": false,
+            "link": {
+                "type": "modal",
+                "page": "ModalComentarioPage"
+            }
+        }, {
+            "name": "Asistencia Telefonica",
+            "icon": "phone",
+            "login": false,
+            "link": {
+                "type": "modal",
+                "page": "ModalAsistenciaTelefonicaPage"
+            }
+        }, {
+            "name": "Cerrar Sesion",
+            "icon": "power",
+            "login": true,
+            "link": {
+                "type": "action",
+                "page": "logout"
+            }
+        }
+    ],
+    "TABS": [
+        {
+            "name": "HOME",
+            "title": "Inicio",
+            "icon": "home",
+            "custom_class": "",
+            "ref": { 
+                "name": "Home",
+                "type": "page"
+            },
+            "nav": {
+                "ref": "Home",
+                "data": "assets/icon/sodimac.png"
+            }
+        },{
+            "name": "FAVORITES",
+            "title": "Favoritos",
+            "icon": "heart",
+            "custom_class": "",
+            "ref": { 
+                "name": "Favorites",
+                "type": "page"
+            },
+            "nav": "Favoritos"
+        },{
+            "name": "LECTOR",
+            "title": "Lector",
+            "icon": "ios-barcode-outline",
+            "custom_class": "lector",
+            "ref": {
+                "name": "QrChoosePage",
+                "type": "modal"
+            },
+            "nav": ""
+        },{
+            "name": "CATEGORIES",
+            "title": "Categorías",
+            "icon": "apps",
+            "custom_class": "",
+            "ref": { 
+                "name": "Categories",
+                "type": "page"
+            },
+            "nav": "Categorías"
+        },{
+            "name": "MENU",
+            "title": "Menu",
+            "icon": "menu",
+            "custom_class": "",
+            "ref": { 
+                "name": "BurgerPage",
+                "type": "modal"
+            },
+            "nav": ""
+        }
+    ],
+    "DIALOGS": {
+        "HOME": {
+            "SPECIAL_PRODUCTS": "Productos Destacados",
+            "RELATED": "Relacionados",
+            "RECENT": "Vistos Recientemente"
+        },
+        "FAVORITES": {
+            "EMPTY": "Actualmente tu listado de favoritos está vacío",
+            "EMPTY_BTN": "Agregar más Productos"
+        },
+        "CART": {
+            "EMPTY": "Actualmente tu carro de compra está vacío",
+            "EMPTY_BTN": "Agregar Productos"
+        },
+        "SCANGO": {
+            "EMPTY": "Actualmente tu carro de compra está vacío",
+            "EMPTY_BTN": "Escanear Productos"
+        },
+        "QUOTATIONS": {
+            "EMPTY": "Actualmente no ha realizado ninguna cotización en tienda",
+            "EMPTY_BTN": "Buscar productos"
+        },
+        "SEARCH": {
+            "RECIENTS": "Recientes",
+            "CATEGORIES": "Categorías",
+            "PRODUCTS": "Productos",
+            "EMPTY": "Sin resultados",
+            "PRODUCTOS_DESTACADOS": "Productos Destacados",
+            "VISTOS_RECIENTE": "Vistos Recientemente",
+            "VERTODOS": "Ver Todos los resultados",
+            "VERMAS": "Ver Más"
+        },
+        "STORES": {
+            "NEAR": "Tiendas Cercanas a ti",
+            "OTHERS": "Otras tiendas"
+        },
+        "PDP": {
+            "CALL_CENTER": "¿Desea comprar este producto?"
+        }
+    },
+    "MODALS": {
+        "RT_DD": {
+            "title": "Compras Online",
+            "SEGMENTS": [
+                {
+                    "id": "DD",
+                    "title": "Despacho a Domicilio",
+                    "icon": "",
+                    "TOP": {
+                        "title": "<b>Recibe tu compra</b>",
+                        "description": "en la comodidad de tu hogar"
+                    },
+                    "METODOS": {
+                        "title": "Métodos de Compra",
+                        "data":  [
+                            {
+                                "name": "Aplicación Movil",
+                                "iconTop": "ios-phone-portrait-outline",
+                                "textBottom": {
+                                    "type": "icons",
+                                    "content": [
+                                        "logo-android",
+                                        "logo-apple"
+                                    ]
+                                }
+                            }, {
+                                "name": "Sitio Sodimac",
+                                "iconTop": "ios-laptop-outline",
+                                "textBottom": {
+                                    "type": "web", 
+                                    "content": "www.sodimac.com.pe"
+                                }
+                            }, {
+                                "name": "Venta Telefónica",
+                                "iconTop": "ios-call",
+                                "textBottom": {
+                                    "type": "number_phone", 
+                                    "content": "01 615 6002"
+                                }
+                            }
+                        ]
+                    },
+                    "COMO_FUNCIONA": {
+                        "title": "¿Cómo comprar desde la APP de Sodimac?",
+                        "SLIDES": [
+                            {
+                                "important_title": "",
+                                "image": "assets/imgs/landingRTDD/ico_truck.png",
+                                "description": "Ingresa a la app de Sodimac: Compra cualquier producto disponible para <b>Despacho a Domicilio</b>."
+                            }, {
+                                "important_title": "",
+                                "image": "assets/imgs/landingRTDD/ico_directiona.png",
+                                "description": "<b>Ingresa tu dirección de despacho (casa u oficina)</b> . Recuerda que el costo del flete se calcula en base al destino, peso y volumen de tu producto. Este costo podrás verlo durante el proceso de compra"
+                            }, {
+                                "important_title": "",
+                                "image": "assets/imgs/landingRTDD/ico_calendar.png",
+                                "description": "Elige la <b>fecha</b> ."
+                            }, {
+                                "important_title": "",
+                                "image": "assets/imgs/landingRTDD/ico_card.png",
+                                "description": "Elige tu forma de <b>pago</b>."
+                            }, {
+                                "important_title": "¡Tu compra está en camino!",
+                                "image": "assets/imgs/landingRTDD/ico_bag.png",
+                                "description": "Recibirás un <b>mail</b> con el resumen de la compra y te informaremos cuando tu compra (despacho) esté en camino."
+                            }
+                        ]
+                    },
+                    "NO_OLVIDAR": {
+                        "title": "Recuerda",
+                        "items": [
+                            "Verificar que el producto corresponda a lo que compraste y se encuentre en perfectas condiciones antes de firmar la guía de despacho y aceptarla.",
+                            "Si el producto se encuentra en malas condiciones recházalo y regístralo anotando en el detalle de la guía de despacho junto con tu nombre y DNI. Exige una copia.",
+                            "El servicio de despacho no considera el armado o instalación de productos; a menos que lo hayas solicitado al momento de tu compra. Este servicio tiene un costo adicional ",
+                            "Si compras más de 1 producto, tu compra podría ser despachada en 2 o más envíos."
+                        ]
+                    },
+                    "FAQ": {
+                        "title": "Preguntas Frecuentes",
+                        "items": [
+                            {
+                                "q": "¿Cuáles son nuestros métodos de despacho?",
+                                "a": "<b>El método de entrega ventana horaria tiene un costo adicional de S/30.00 y sólo se encuentra por el momento disponible en los distritos de la Zona Urbana. La oferta de entrega está sujeta a disponibilidad.</b><br><br><b>Despacho Programado:</b> Podrás programar la entrega un día específico dentro de un lapso de 2 semanas a partir del día siguiente de la compra, las entregas se realizan durante el día, desde las 9:00 hasta las 21:00 horas.<br><br><b>Despacho Ventana Horaria:</b> A través de este método de entrega podrás programar tu despacho en un rango de 13 horas, contamos con 1 ventana horaria:",
+                                "list": [
+                                    "Ventana 1: Desde las 9:00  hasta las 21 horas",
+                                    "",
+                                    "",
+                                    ""
+                                ]
+                            }, {
+                                "q": "¿Cuándo llegará mi orden?",
+                                "a": "Al momento de la compra podrás seleccionar la fecha de entrega la cual se confirmará en el email de agradecimiento. De todas maneras, podrás conocer el estado de tu compra a través de la opción <b>\"Mis compras\"</b>",
+                                "list": []
+                            }, {
+                                "q": "¿Puedo cambiar la dirección de entrega o reprogramar la fecha de entrega de mi compra?",
+                                "a": "Para poder realizar cambios en la dirección o reprogramar tu pedido debes comunicarte a nuestra línea de atención a clientes <b>(01) 419 2000</b> y pedirlo al asesor de atención a clientes, si tu pedido no se encuentra en proceso de entrega podremos realiz",
+                                "list": []
+                            }, {
+                                "q": "¿Qué pasa si mi compra llega dañada?",
+                                "a": "Si el pedido llega con daño, deberá llamar a nuestra línea de atención a clientes <b>>(01) 419 2000</b> para que podamos ayudarte con el cambio del producto. Si este presenta daños en el momento de la entrega, rechace los artículos rotos o dañados con el transportista y anote el daño en la guía de despacho.",
+                                "list": []
+                            }, {
+                                "q": "¿Qué sucede si mi compra está pendiente de entrega?",
+                                "a": "En raras ocasiones tenemos problemas con la entrega de nuestros pedidos, en el caso de que esto ocurra nos pondremos en contacto para informarte lo sucedido.",
+                                "list": []
+                            }, {
+                                "q": "¿Existe alguna restricción de entrega?",
+                                "a": "Tratamos de cubrir la mayor parte del Perú, llegamos al mayor número de regiones a lo largo del país; sin embargo, aún no tenemos el 100% de cobertura. Para algunas provincias no tenemos servicios de entrega  disponibles",
+                                "list": []
+                            }
+                        ]
+                    }
+                }, {
+                    "id": "RT",
+                    "title": "Retiro en Tienda",
+                    "icon": "",
+                    "TOP": {
+                        "title": "<b>Ahorra el costo de envío</b>",
+                        "description": "retirando tus compras gratis en cualquiera de nuestras 24 tiendas a nivel nacional (14 en Lima y 12 en Provincias)"
+                    },
+                    "METODOS": {
+                        "title": "Métodos de Compra",
+                        "data": [
+                            {
+                                "name": "Aplicación Movil",
+                                "iconTop": "ios-phone-portrait-outline",
+                                "textBottom": {
+                                    "type": "icons",
+                                    "content": [
+                                        "logo-android",
+                                        "logo-apple"
+                                    ]
+                                }
+                            }, {
+                                "name": "Sitio Sodimac",
+                                "iconTop": "ios-laptop-outline",
+                                "textBottom": {
+                                    "type": "web", 
+                                    "content": "www.sodimac.com.pe"
+                                }
+                            }, {
+                                "name": "Venta Telefónica",
+                                "iconTop": "ios-call",
+                                "textBottom": {
+                                    "type": "number_phone", 
+                                    "content": "01 615 6002"
+                                }
+                            }
+                        ]
+                    },
+                    "COMO_FUNCIONA": {
+                        "title": "¿Cómo Funciona?",
+                        "SLIDES": [
+                            {
+                                "important_title": "",
+                                "image": "assets/imgs/landingRTDD/ico_ret-tienda.png",
+                                "description": "Ingresa a la app de Sodimac y compra cualquier producto con el ícono <b>“Retiro en tienda”</b> disponible."
+                            }, {
+                                "important_title": "",
+                                "image": "assets/imgs/landingRTDD/ico_tienda.png",
+                                "description": "Selecciona tu <b>tienda</b> para retiro."
+                            }, {
+                                "important_title": "",
+                                "image": "assets/imgs/landingRTDD/ico_card.png",
+                                "description": "Elige tu forma de <b>pago.</b>"
+                            }, {
+                                "important_title": "",
+                                "image": "assets/imgs/landingRTDD/ico_envelope.png",
+                                "description": "Recibirás <b>mail</b> con el status de tu pedido; inclusive cuando tu compra esté lista para para retirar en la tienda que elegiste"
+                            }
+                        ]
+                    },
+                    "NO_OLVIDAR": {
+                        "title": "Recuerda",
+                        "items": [
+                            "Presenta tu Documento de Identidad (DNI) y número de Orden de compra ",
+                            "Si el retiro lo realizará un tercero, recuerda indicarlo cuando realices tu compra. De igual manera deberá llevar consigo su Documento de Identidad (DNI)",
+                            "Podrás retirar en la tienda seleccionada durante los horarios regulares (abiertos al público)",
+                            "Debes esperar un correo de confirmación para que puedas retirar los productos en tienda"
+                        ]
+                    },
+                    "FAQ": {
+                        "title": "Preguntas Frecuentes",
+                        "items": [
+                            {
+                                "q": "¿En qué tienda tengo la opción de Retiro en Tienda?",
+                                "a": "La opción de Compra Online con Retiro en Tiendas se encuentra disponible en todas las tiendas Sodimac Homecenter Y Sodimac Constructor del país. Para saber si un producto cuenta con esta opción habilitada, debes verificar en la ficha de producto. La otra forma de revisarlo es en el proceso de compra.",
+                                "list": []
+                            }, {
+                                "q": "¿Cómo funciona el proceso Retiro en Tienda?",
+                                "a": "Te notificaremos mediante correo electrónico el estado de tu orden, primero te llegará una confirmación de la compra realizada. Luego, recibirás un email en donde te indicaremos que tu producto ya se encuentra disponible para ser retirado en la tienda seleccionada.",
+                                "list": []
+                            }, {
+                                "q": "¿Cuánto tiempo tardará mi orden en estar lista después de haberla compra con Retiro en Tienda?",
+                                "a": "La mayoría de nuestros pedidos tarda entre 1 a 5 días en estar disponible en la tienda, pero recuerda que lo mejor es esperar el mail de confirmación de retiro.",
+                                "list": []
+                            }, {
+                                "q": "¿Cómo sabré cuando mi orden estará lista para retirar?",
+                                "a": "Cuando el pedido esté listo te notificaremos a través de un correo electrónico al correo que proporcionaste e incluirá el estado de tu compra y las instrucciones que debes realizar para retirar en la tienda seleccionada.",
+                                "list": []
+                            }, {
+                                "q": "¿Dónde tendré que retirar mi orden una vez que haya llegado a la tienda?",
+                                "a": "Debes dirigirte al mesón de Retiro en Tienda, post venta o mesón de servicios de la tienda y solicitar la entrega de tu compra.",
+                                "list": []
+                            }, {
+                                "q": "¿Cuánto tiempo estará disponible mi producto en la tienda?",
+                                "a": "Desde que recibes el mail en donde te notific",
+                                "list": []
+                            }, {
+                                "q": "¿Por qué es necesario ingresar mi número de teléfono cuando compro con Retiro en Tienda?",
+                                "a": "Si por alguna razón hay problemas con tu producto en la tienda seleccionada, personal de Sodimac necesitará un teléfono de contacto para poder entregarte información respecto a tu pedido. Además, a través de esta vía te informaremos con un correo electrónico cuando tu compra esté lista para ser retirada.",
+                                "list": []
+                            }, {
+                                "q": "¿Qué necesito llevar para retirar mi compra?",
+                                "a": "Para realizar el proceso de entrega más fácil y rápido necesitamos que al momento de retirar tu o el tercero que autorizaste cuando realizaste la compra presenten la siguiente documentación:",
+                                "list": [
+                                    "Documento de Identidad (DNI) o pasaporte",
+                                    "Número de la orden de compra."
+                                ]
+                            }
+                        ]
+                    }
+                }
+            ]
+        },
+        "COTIZADOR": {
+            "DESCRIPTION": ""
+        }
+    },
+    "LOADING": {
+        "FLEX_LOADGIN": [
+            {
+                "title": "Precios únicos para aprovechar esta temporada",
+                "legend": "Cargando Información"
+            }, {
+                "title": "Precios únicos para aprovechar esta temporada",
+                "legend": "Cargando información..."
+            }, {
+                "title": "<strong>Sorpréndete</strong> con todas las novedades que tenemos para ti",
+                "legend": "Cargando información..."
+            }, {
+                "title": "Buscando los mejores productos para materializar todos tus sueños Hogar",
+                "legend": "Cargando información..."
+            }, {
+                "title": "Tenemos las mejores oportunidades para cada espacio de tu Hogar",
+                "legend": "Cargando información..."
+            }
+        ],
+        "REFRESH": {
+            "PULL": "Suelte para actualizar",
+            "TEXT": "Actualizando"
+        }
+    },
+    "ALERTS": {
+        "DELETE": {
+            "TITLE": "Confirmación",
+            "MESSAGE": "¿Estás seguro que desea eliminar el producto?",
+            "BUTTONS": {
+                "CANCEL": "Cancelar",
+                "OK": "Ok"
+            }
+        },
+        "STORE": {
+            "TITLE": "Cambio de tienda",
+            "MESSAGE": "¡Tu tienda ha cambiado correctamente!",
+            "BUTTONS": {
+                "OK": "Entendido"
+            }
+        }
+    },
+    "SCAN_GO": {
+        "PagaText": "Paga en caja indicando el número de la orden o el de tu DNI a nuestro personal de caja."
+    },
+    "PRIVACY_POLICIES": [
+       {
+           "title": "Cambios y devoluciones",
+           "description": "Recuerda que además de la garantía legal cuentas con:",
+           "items": [
+               {
+                   "title": "Satisfacción garantizada",
+                   "description": "Puedes devolver tu compra incluso 15 días después de recibida. Revisa los requisitos de Satisfacción Garantizada.",
+                   "link": "http://www.sodimac.com.pe/sodimac-pe/content/a990001/precios-bajos-garantizados?cid=homhom21549"
+               }, {
+                   "title": "Servicio Técnico",
+                   "description": "Puedes acercarte al servicio técnico en nuestras tiendas o al de la marca de tu producto.",
+                   "link": ""
+               }, {
+                   "title": "Devolución de dinero",
+                   "description": "Puedes anular la compra y solicitar la devolución de tu dinero. Consulta los plazos de devolución según medio de pago.",
+                   "link": "http://www.sodimac.com.pe/sodimac-pe/content/a50035/devolucion-gratis"
+               }
+           ]
+       }, {
+           "title": "Despacho",
+           "description": "Te informamos sobre nuestras políticas de despacho:",
+           "items": [
+               {
+                   "title": "Horario",
+                   "description": "El despacho de productos para las zonas en las que tenemos coberturas serán de lunes a sábado entre las 9 horas hasta las 21 horas del día;  bajo coordinación efectuada al momento de la compra online",
+                   "link": ""
+               }, {
+                   "title": "Satisfacción",
+                   "description": "Verifica que corresponda el producto una vez recibido y que éste se encuentre en perfectas condiciones antes de firmar la guía de despacho. En caso de disconformidad con la guía despacho para hacer válida la política de cambios y devoluciones.",
+                   "link": "http://www.sodimac.com.pe/sodimac-pe/content/a990001/precios-bajos-garantizados?cid=homhom21549"
+               }, {
+                   "title": "Recepción del producto",
+                   "description": "La recepción debe realizarse por un mayor de edad; quien deberá firmar, escribir nombre y RUC (en caso lo amerite) en la guía de despacho para acreditar la recepción. Para mayor información revisa los términos y condiciones de cada proceso.",
+                   "link": "http://www.sodimac.com.pe/sodimac-pe/content/a50044/servicio-despacho"
+               }
+           ]
+       }
+    ]
+}
